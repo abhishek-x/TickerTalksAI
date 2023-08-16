@@ -22,17 +22,17 @@ def plot_stock_data(ticker, data):
 
 
 # Set the page title and favicon
-st.set_page_config(page_title="Stock Summary App", page_icon=":chart_with_upwards_trend:")
+st.set_page_config(page_title="TickerTalksAI", page_icon=":chart_with_upwards_trend:")
 
 # Add a title and description
-st.title("Stock summary")
-st.markdown("Enter a stock ticker and get a summary of its financial data.")
+st.title("TickerTalksAI 💸")
+st.markdown("Enter a stock ticker 📈 and get a summary of its financial data using GPT-4 Language Model 🧠.")
 
 # Get user input for the stock ticker
 ticker = st.text_input("Enter the stock ticker:")
 
 # Fetch and display financial data when the user clicks the button
-if st.button("Get Summary"):
+if st.button("Get Summary 📊"):
     if ticker and is_valid_ticker(ticker):
         data, news, stock_data = get_financial_data(ticker)
 
