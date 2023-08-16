@@ -1,10 +1,10 @@
 import plotly.graph_objs as go
 import streamlit as st
+import openai
+import requests
 
 from src.financial_data import get_financial_data
-from src.openai_summary import summarize_financial_data
 from src.tickers import is_valid_ticker
-
 
 def plot_stock_data(ticker, data):
     trace = go.Candlestick(
@@ -20,7 +20,6 @@ def plot_stock_data(ticker, data):
     fig = go.Figure(data=[trace], layout=layout)
     return fig
 
-
 # Set the page title and favicon
 st.set_page_config(page_title="TickerTalksAI", page_icon=":chart_with_upwards_trend:")
 
@@ -30,6 +29,21 @@ st.markdown("Enter a stock ticker 📈 and get a summary of its financial data u
 
 # Get user input for the stock ticker
 ticker = st.text_input("Enter the stock ticker:")
+openai.api_key = st.text_input("Enter your OpenAI API Key:")
+
+# GPT call
+def summarize_financial_data(news, ticker):
+    prompt = f'News of {ticker}: "{news}"\nIs {ticker} a buy at the moment? Here\'s the summary:\n'
+    response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.7,
+    )
+    summary_news = response.choices[0].text.strip()
+    return summary_news
 
 # Fetch and display financial data when the user clicks the button
 if st.button("Get Summary 📊"):
