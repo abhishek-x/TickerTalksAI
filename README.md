@@ -7,7 +7,7 @@
   <h3 align="center">TickerTalksAI</h3>
 
   <p align="center">
-    Get summaries of stock's financial data using GPT-4 Language Model!
+    Get summaries of the stock's financial data using GPT-4 Language Model!
     <br/>
     <br/>
     <a href="https://github.com/abhishek-x/TickerTalksAI/tree/main"><strong>Explore the docs »</strong></a>
@@ -23,9 +23,7 @@
 
 ## About The Project
 
-![Screen Shot](UI.png)
-
-Stock summarization app that retrieves financiel data from Yahoo Finance for stock ticker and summarizes recent news related to the stock using OpenAI language models.
+Stock summarization app that retrieves financial data from Yahoo Finance for stock ticker and summarizes recent news related to the stock using OpenAI language models.
 
 ## Built With
 
@@ -59,7 +57,7 @@ streamlit run app.py
 
 ## Usage
 
-![Screen Shot](UI.png)
+![Usage](images/usage.png)
 
 1. Enter the **Stock Ticker**.
 2. Enter the **OpenAI API key**.
@@ -67,7 +65,7 @@ streamlit run app.py
 
 ## Results
 
-![Screen Shot](UI.png)
+![Results](images/results.png)
 
 ## License
 
