@@ -6,8 +6,6 @@ import requests
 # OpenAI API key
 # OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 # openai.api_key = OPENAI_API_KEY
-openai.api_key = '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'
-
 
 def summarize_financial_data(news, ticker):
     prompt = f'News of {ticker}: "{news}"\nIs {ticker} a buy at the moment? Here\'s the summary:\n'
