@@ -27,9 +27,9 @@ Stock summarization app that retrieves financial data from Yahoo Finance for sto
 
 ## Built With
 
-Languages: Python 3.9
-LLM: GPT-4
-Data: Yahoo Finance API
+1. Languages: Python 3.9
+2. LLM: GPT-4
+3. Data: Yahoo Finance API
 
 ### Prerequisites
 
