@@ -29,7 +29,7 @@ and continuous news streams which are often inaccessible to the average person.
 This project is conceived as a bridge across this divide, harnessing the power of OpenAI's GPT-4 Language Model to analyze and synthesize financial data and news into 
 actionable insights. It aspires to democratize financial analysis, allowing users to make more informed decisions and engage with the stock market in a more meaningful way.
 
-`Because everyone deserves a fair shot at financial prosperity.`
+`Empowering smarter investment choices through the use of AI-driven insights.`
 
 ## 🚀 Features
 
