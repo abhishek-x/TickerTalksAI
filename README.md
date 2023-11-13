@@ -1,76 +1,81 @@
-<br/>
-<p align="center">
-  <a href="https://tickertalks.streamlit.app">
-    <img src="https://emojiisland.com/cdn/shop/products/Money_with_Wings_Emoji_grande.png?v=1571606064" alt="Logo" width="80" height="80">
-  </a>
+<a href="https://tickertalks.streamlit.app/">
+  <img src="https://emojiisland.com/cdn/shop/products/Money_with_Wings_Emoji_grande.png?v=1571606064" alt="Logo" width="64" height="64">
+<a>
 
-  <h3 align="center">TickerTalksAI</h3>
+# TickerTalksAI
 
-  <p align="center">
-    Get summaries of the stock's financial data using GPT-4 Language Model!
-    <br/>
-    <br/>
-    <a href="https://github.com/abhishek-x/TickerTalksAI/tree/main"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://tickertalks.streamlit.app">View Demo</a>
-    .
-    <a href="https://github.com/abhishek-x/TickerTalksAI/issues">Report Bug</a>
-    .
-    <a href="https://github.com/abhishek-x/TickerTalksAI/issues">Request Feature</a>
-  </p>
-</p>
+With the overwhelming amount of data and news that can impact stock prices, it became imperative to create a tool that could assist both investors in making informed decisions. 
+An ideal solution would democratize access to sophisticated stock analysis, allowing users to leverage advanced technologies to keep pace with the professionals.
 
-## About The Project
+`TickerTalksAI` fills this gap by utilising the powerful GPT-4 Language Model from OpenAI as its backbone, which not only summarizes financial data but also analyzes 
+recent news to provide a comprehensive stock outlook.
 
-Stock summarization app that retrieves financial data from Yahoo Finance for stock ticker and summarizes recent news related to the stock using OpenAI language models.
+![UI](homepage.png)
 
-## Built With
+## 🌐 Table of Contents
 
-1. Languages: Python 3.9
-2. LLM: GPT-4
-3. Data: Yahoo Finance API
+- [Background](#-background)
+- [Features](#-features)
+- [Getting Started](#-getting-started)
+- [Usage](#-usage)
+- [Built Using](#%EF%B8%8F-built-using)
+- [Contributors](#-contributors)
+
+## 📜 Background
+
+The inspiration for this project is rooted in the recognition that the realm of financial investment is rife with complexity characterized by a deluge of data points 
+and continuous news streams which are often inaccessible to the average person. 
+
+This project is conceived as a bridge across this divide, harnessing the power of OpenAI's GPT-4 Language Model to analyze and synthesize financial data and news into 
+actionable insights. It aspires to democratize financial analysis, allowing users to make more informed decisions and engage with the stock market in a more meaningful way.
+
+`Because everyone deserves a fair shot at financial prosperity.`
+
+## 🚀 Features
+
+![features](images/results.png)
+
+1. Integration with Yahoo Finance API for real-time stock data retrieval.
+2. Interactive stock chart display for easy visualization of stock performance over the last three months.
+3. OpenAI's GPT-4 model for processing and analysing summarisations.
+4. Responsive design for an optimal user experience across various devices and screen sizes.
+5. Minimalist UI design focused on usability and straightforward navigation.
+
+## 🏁 Getting Started
 
 ### Prerequisites
 
-Get your OpenAI API key from [OpenAI](https://platform.openai.com/account/api-keys)
+- [OpenAI API Key](https://platform.openai.com/account/api-keys): For accessing AI models developed by OpenAI.
 
-### Installation
+### Installation & Configuration
 
-1. Clone the repo
+1. **Clone the Repo**
 
-```sh
-git clone https://github.com/abhishek-x/TickerTalksAI.git
-```
+   `git clone https://github.com/abhishek-x/TickerTalksAI.git`
 
-3. Install packages
+2. **Install packages**
 
-```sh
-pip install -r requirements.txt
-```
+   `pip install -r requirements.txt`
 
-4. Run `app.py` locally
+3. **Run `app.py` locally**
 
-```sh
-streamlit run app.py
-```
+   `streamlit run app.py`
 
-## Usage
+## 🎈 Usage
+<img src="images/usage.png" alt="Logo" width="700">
 
-![Usage](images/usage.png)
+- Enter the **Stock Ticker**.
+- Enter the **OpenAI API key**.
+- Click on **Get Summary** Button.
 
-1. Enter the **Stock Ticker**.
-2. Enter the **OpenAI API key**.
-3. Click on **Get Summary** Button.
+## ⛏️ Built Using
 
-## Results
+`Python 3.9`, `GPT-4`, `Yahoo Finance API`, `BeautifulSoup`, `Plotly`, `Streamlit`
 
-![Results](images/results.png)
+## 👥 Contributors
 
-## License
-
-Distributed under the MIT License. See [LICENSE](https://github.com/abhishek-x/TickerTalksAI/blob/main/LICENSE) for more information.
-
-## Authors
-
-* **[Abhishek Aggarwal](https://github.com/abhishek-x)** - *Comp Sci Student*
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/abhishek-x"><img src="https://avatars.githubusercontent.com/u/70960570?v=4" width="100px;" alt=""/><br /><sub><b>Abhishek Aggarwal</b></sub></a><br /></td>
+  </tr>
+</table>
